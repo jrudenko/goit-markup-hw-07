@@ -14,7 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/main.min.css">
+    <!-- <link rel="stylesheet" href="./CSS/styles.css"> -->
 </head>
 
 <body class="page">
@@ -24,28 +25,28 @@
     <header class="header">
         <div class="container header-container">
             <nav class="header-container">
-                <a lang="en" class="logo" href="./index.html" aria-label="Посилання на студію">Web<span
-                        class="studio">Studio</span></a>
+                <a lang="en" class="logo header-logo" href="./index.html" aria-label="Посилання на студію">Web<span
+                        class="logo__studio--dark">Studio</span></a>
                 <!-- Навігація сайту -->
-                <ul class="list">
-                    <li class="link"><a class="nav" href="./index.html">Студія</a></li>
-                    <li class="link active"><a class="nav current" href="">Портфоліо</a></li>
-                    <li class="link"><a class="nav" href="">Контакти</a></li>
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link active" href="./index.html">Студія</a></li>
+                    <li class="nav__item"><a class="nav nav--current active" href="">Портфоліо</a></li>
+                    <li class="nav__item"><a class="nav__link active" href="">Контакти</a></li>
                 </ul>
             </nav>
             <!-- Навігація контактів -->
-            <ul class="list header-group">
-                <li class="list-mail">
-                    <a class="mail" href="mailto:info@devstudio.com">
-                        <svg class="mail-icon" width="16" height="12">
+            <ul class="nav nav--left">
+                <li class="nav__group">
+                    <a class="nav__mail active" href="mailto:info@devstudio.com">
+                        <svg class="nav__icon active" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope-hover"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
                 <li>
-                    <a class="tel" href="tel:+380961111111">
-                        <svg class="mail-icon" width="10" height="16">
+                    <a class="nav__tel active" href="tel:+380961111111">
+                        <svg class="nav__icon active" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +380961111111
@@ -61,22 +62,22 @@
                 <h1 hidden>Приклади робіт</h1>
 
                 <!-- Секція Радіокнопки -->
-                <ul class="about-btn">
-                    <li class="control"><button type="button" class="list-btn list-btn-current">Усі</button></li>
-                    <li class="control"><button type="button" class="list-btn">Веб-сайти</button></li>
-                    <li class="control"><button type="button" class="list-btn">Додатки</button></li>
-                    <li class="control"><button type="button" class="list-btn">Дизайн</button></li>
-                    <li class="control"><button type="button" class="list-btn">Маркетинг</button></li>
+                <ul class="btn-radio">
+                    <li class="btn-radio_control"><button type="button" class="btn-radio_list btn-radio--current">Усі</button></li>
+                    <li class="btn-radio_control"><button type="button" class="btn-radio_list">Веб-сайти</button></li>
+                    <li class="btn-radio_control"><button type="button" class="btn-radio_list">Додатки</button></li>
+                    <li class="btn-radio_control"><button type="button" class="btn-radio_list">Дизайн</button></li>
+                    <li class="btn-radio_control"><button type="button" class="btn-radio_list">Маркетинг</button></li>
                 </ul>
 
                 <!-- Секція Карток -->
-                <ul class="list about-portfolio card-set ">
-                    <li class="card-portfolio card-set-item">
+                <ul class="list card-set ">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Технокряк.jpg" alt="Фото роботи Технокряк" width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -91,13 +92,13 @@
 
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/New_Orlean.jpg" alt="Фото роботи Постер New Orlean vs Golden Star"
                                     width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -111,13 +112,13 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Seafood.jpg" alt="Фото роботи Ресторан Seafood" width="370"
                                     height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -131,12 +132,12 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Prime.jpg" alt="Фото роботи роект Prime" width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -150,12 +151,12 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Boxes.jpg" alt="Фото роботи Проект Boxes" width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -169,13 +170,13 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Inspiration.jpg" alt="Фото роботи Inspiration has no Borders"
                                     width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -189,13 +190,13 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Limited_Edition.jpg" alt="Фото роботи Видавництво Limited Edition"
                                     width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -209,12 +210,12 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/LAB.jpg" alt="Фото роботи Проект LAB" width="370" height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -228,13 +229,13 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-portfolio card-set-item">
+                    <li class="card-portfolio card-set__item">
                         <a href="">
                             <div class="product">
                                 <img src="./images/Growing-Business.jpg" alt="Фото роботи Growing Business" width="370"
                                     height="294">
-                                <div class="product-overlay">
-                                    <p class="lead">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                         сервісів. Все це дозволить
                                         відвідувачеві
                                         отримати
@@ -260,70 +261,70 @@
     <footer class="footer">
         <div class="container">
             <div class="holder">
-                <a lang="en" class="logo2" href="./index.html" aria-label="Посилання на студію">Web<span
-                        class="element">Studio</span></a>
+                <a lang="en" class="logo footer-logo" href="./index.html" aria-label="Посилання на студію">Web<span
+                        class="logo__studio--light">Studio</span></a>
                 <address>
-                    <ul class="list about-footer">
+                    <ul class="list contacts">
                         <li>
-                            <a class="adds" href="https://goo.gl/maps/7YwU6FTkQ5FnYXwe8" target="_blank"
+                            <a class="contacts__adds active" href="https://goo.gl/maps/7YwU6FTkQ5FnYXwe8" target="_blank"
                                 rel="noopener noreferrer">м.
                                 Київ, пр-т Лесі Українки, 26</a>
                         </li>
                         <li>
-                            <a lang="en" class="mail2" href="mailto:info@example.com">info@example.com</a>
+                            <a lang="en" class="contacts__mail2 active" href="mailto:info@example.com">info@example.com</a>
                         </li>
                         <li>
-                            <a class="phone" href="tel:+380991111111">+380991111111</a>
+                            <a class="contacts__phone active" href="tel:+380991111111">+380991111111</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="holder draft">
+            <div class="holder holder-draft">
                 <h2 class="footer-title">Приєднуйтесь</h2>
                 <ul class="social-media list">
-                    <li class="social-media-item">
-                        <a class="social-media-link-footer" href="" target="_blank" rel="noopener noreferrer"
+                    <li class="social-media__item">
+                        <a class="social-media__link social-media__link--dark" href="" target="_blank" rel="noopener noreferrer"
                             aria-label="instagram">
-                            <svg class="social-media-icon" width="20" height="20">
+                            <svg class="social-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-media-item">
-                        <a class="social-media-link-footer" href="" target="_blank" rel="noopener noreferrer"
+                    <li class="social-media__item">
+                        <a class="social-media__link social-media__link--dark" href="" target="_blank" rel="noopener noreferrer"
                             aria-label="twitter">
-                            <svg class="social-media-icon" width="20" height="20">
+                            <svg class="social-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-media-item">
-                        <a class="social-media-link-footer" href="" target="_blank" rel="noopener noreferrer"
+                    <li class="social-media__item">
+                        <a class="social-media__link social-media__link--dark" href="" target="_blank" rel="noopener noreferrer"
                             aria-label="facebook">
-                            <svg class="social-media-icon" width="20" height="20">
+                            <svg class="social-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-media-item">
-                        <a class="social-media-link-footer" href="" target="_blank" rel="noopener noreferrer"
+                    <li class="social-media__item">
+                        <a class="social-media__link social-media__link--dark" href="" target="_blank" rel="noopener noreferrer"
                             aria-label="linkedin">
-                            <svg class="social-media-icon" width="20" height="20">
+                            <svg class="social-media__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="holder draft2">
+            <div class="holder  holder-draft2">
                 <strong class="footer-title">Підпишіться на розсилку</strong>
-                <form class="footer-form">
+                <form class="footer__form">
                     <label>
-                        <input class="footer-placeholder" type="email" name="email" placeholder="E-mail" />
+                        <input class="footer__placeholder" type="email" name="email" placeholder="E-mail" />
                     </label>
-                    <button type="submit" class="sabmit-btn">
+                    <button type="submit" class="btn btn--sabmit">
                         Підписатись
-                        <svg class="send-icon" width="24" height="24">
+                        <svg class="btn__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>

@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: var(--primary-text-color);
+    font-size: 14px;  
+    
+    &.no-scroll {
+     overflow: hidden;
+    }
+}
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
