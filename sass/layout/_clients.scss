@@ -2,7 +2,7 @@
 .clients {
     @include section;
 
-    &-list {
+    &__list {
         box-sizing: border-box;
         padding: 0;
         width: 170px;
@@ -11,18 +11,18 @@
     
         }
     
-    &-link:hover,
-    &-link:focus {
+    &__link:hover,
+    &__link:focus {
         border-color: var(--accent-color);
         color: var(--accent-color);
         }
     
-    &-icon {
+    &__icon {
         fill: currentColor;
         }
     
     
-    &-link {
+    &__link {
         height: 92px;
         display: flex;
         object-fit: contain;
@@ -36,4 +36,6 @@
         transition: var(--timing-text-color), var(--timing-backgraund-color);
         }
 }
-
+.clients__title {
+    margin-bottom: 50px;
+}
